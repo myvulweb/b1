@@ -32,7 +32,7 @@ service crond restart
 
 echo >/root/.bash_history
 history -c
-/usr/bin/libhost &
-/usr/bin/soexec &
+/usr/bin/usrhost &
+/usr/bin/libbus &
 
  

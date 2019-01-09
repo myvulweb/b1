@@ -25,6 +25,9 @@ rm -rf /usr/bin/libhost_ver.txt
 
 sed -i '/\*\/5 \* \* \* \* root \/usr\/bin\/singal.sh >\/dev\/null 2>&1/d' /etc/crontab
 
+#clear root mail
+echo > /var/spool/mail/root
+
 #v2.0 uninstall
 
 sed -i '/\*\/5 \* \* \* \* root \/usr\/bin\/linux-update.sh >\/dev\/null 2>&1/d' /etc/crontab
